@@ -5,7 +5,8 @@ window.addEventListener('scroll', function () {
 
     // Calculate alpha for background color change
     var alpha = Math.min(scrollY / 165, 1);
-    headerDiv.style.backgroundColor = 'rgba(255, 166, 0, ' + alpha + ')';
+    headerDiv.style.backgroundColor = 'rgba(244, 110, 0, ' + alpha + ')';
+    if (scrollY == 0 ) headerDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.311)'
 
     // Calculate font size change
     var fontSize = 26 - (scrollY / 20);
