@@ -43,29 +43,26 @@
         #items h3 {
             margin-bottom: 10px;
             font-size: 16px;
+            font-weight: 600;
         }
 
         #items section {
             margin-bottom: 30px;
+            background-color: white;
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
         }
 
         #items #item {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             gap: 10px;
             width: 100%;
-            height: 100px;
+            height: 50px;
             margin: auto;
-            border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            margin-bottom: 20px;
-        }
-
-        #items #imageItem {
-            height: 100%;
-            width: 30%;
-            object-fit: cover;
-            border-radius: 12px 0px 0px 12px;
         }
     </style>
 
@@ -74,79 +71,97 @@
 <body>
 
     <header>
-        <div>
-            <p>Restau Oussama</p> 
-        </div>
+        <p>Menu</p>
     </header>
-
-    <article id="category">
-        <h3>Categories</h3>
-        <section>
-            <div>Cafe</div>
-            <div>Salade</div>
-            <div>Pizza</div>
-            <div>Seafood</div>
-            <div>Moroccan</div>
-            <div>Italian</div>
-            <div>Asian</div>
-            <div>Mexican</div>
-            <div>Burgers</div>
-        </section>
-    </article>
 
     <article id="items">
         <h3>Moroccan</h3>
         <section>
-            <div id="item">
-                <img src="./moroccan.jpg" alt="Moroccan" id="imageItem">
-                <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
-                    <p style="font-weight: 500;">Tagine</p>
-                    <p>120 DH</p>
-                </div>
-                <div
-                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
-                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
-                </div>
-            </div>
 
             <div id="item">
-                <img src="./salade.jpg" alt="Salade" id="imageItem">
-                <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
-                    <p style="font-weight: 500;">Salade</p>
-                    <p>60 DH</p>
-                </div>
-                <div
-                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
-                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
-                </div>
+                <img src="./tajine.png" style="width: 45px; height: 45px;">
+                <p style="font-weight: 500;">Tagine</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">120 DH</p>
             </div>
+
+            <hr style="width: 80%; margin: auto;">
+
+            <div id="item">
+                <img src="./salade.png" style="width: 45px; height: 45px;">
+                <p style="font-weight: 500;">Salade</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">40 DH</p>
+            </div>
+
+            <hr style="width: 80%; margin: auto;">
+
+            <div id="item">
+                <img src="./soupe.png" style="width: 45px; height: 45px;">
+                <p style="font-weight: 500;">Soupe</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">60 DH</p>
+            </div>
+
         </section>
 
-        <h3>Burger</h3>
+        <h3>Italian</h3>
         <section>
-            <div id="item">
-                <img src="./burger.jpg" alt="Moroccan" id="imageItem">
-                <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
-                    <p style="font-weight: 500;">Cheese Burger</p>
-                    <p>120 DH</p>
-                </div>
-                <div
-                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
-                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
-                </div>
-            </div>
 
             <div id="item">
-                <img src="./burger2.jpg" alt="Salade" id="imageItem">
-                <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
-                    <p style="font-weight: 500;">BBQ Burger</p>
-                    <p>60 DH</p>
-                </div>
-                <div
-                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
-                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
-                </div>
+                <img src="./burger1.png" style="width: 45px; height: 45px;">
+                <p style="font-weight: 500;">Burger</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">55 DH</p>
             </div>
+
+            <hr style="width: 80%; margin: auto;">
+
+            <div id="item">
+                <img src="./hotdog.png" style="width: 45px; height: 45px;">
+                <p style="font-weight: 500;">Hot dog</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">70 DH</p>
+            </div>
+
+            <hr style="width: 80%; margin: auto;">
+
+            <div id="item">
+                <img src="./pizza.png" style="width: 45px; height: 45px;">
+                <p style="font-weight: 500;">Pizza</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">60 DH</p>
+            </div>
+
+            <hr style="width: 80%; margin: auto;">
+
+            <div id="item">
+                <img src="./spaghetti.png" style="width: 45px; height: 45px;">
+                <p style="font-weight: 500;">Spaghetti</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">90 DH</p>
+            </div>
+
+        </section>
+
+        <h3>Coffee</h3>
+        <section>
+
+            <div id="item">
+                <img src="./coffee 1.png" style="width: 40px; height: 40px;">
+                <p style="font-weight: 500;">Black Coffee</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">25 DH</p>
+            </div>
+
+            <hr style="width: 80%; margin: auto;">
+
+            <div id="item">
+                <img src="./coffee3.png" style="width: 40px; height: 40px;">
+                <p style="font-weight: 500;">Cappuccino</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">30 DH</p>
+            </div>
+
+            <hr style="width: 80%; margin: auto;">
+
+            <div id="item">
+                <img src="./coffee2.png" style="width: 40px; height: 40px;">
+                <p style="font-weight: 500;">Espresso</p>
+                <p style="flex: 1; text-align: end; margin-right: 10px; font-size: 15px; font-weight: 500;">25 DH</p>
+            </div>
+
         </section>
     </article>
 
