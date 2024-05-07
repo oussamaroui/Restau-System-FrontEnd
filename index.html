@@ -13,8 +13,6 @@
     <style>
         #category {
             margin: 20px 6px 0px 6px;
-            padding: 14px 0px;
-            overflow-x: scroll;
         }
 
         #category h3 {
@@ -25,24 +23,33 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            padding: 0px 0px 14px 0px;
+            overflow-x: scroll;
         }
 
         #category section div {
             padding: 4px 8px;
             background-color: white;
             border-radius: 2px;
-            box-shadow: 0px 0px 10px 2px rgb(229, 229, 229);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            font-weight: 500;
+            border: 1px solid white;
         }
 
-        #items{
+        #items {
             padding: 12px;
         }
-        #items h3{
+
+        #items h3 {
             margin-bottom: 10px;
             font-size: 16px;
         }
 
-        #items #item{
+        #items section {
+            margin-bottom: 30px;
+        }
+
+        #items #item {
             display: flex;
             justify-content: space-between;
             gap: 10px;
@@ -50,11 +57,11 @@
             height: 100px;
             margin: auto;
             border-radius: 12px;
-            box-shadow: 0px 3px 8px 2px rgb(213, 213, 213);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             margin-bottom: 20px;
         }
 
-        #items #imageItem{
+        #items #imageItem {
             height: 100%;
             width: 30%;
             object-fit: cover;
@@ -94,10 +101,11 @@
                 <img src="./moroccan.jpg" alt="Moroccan" id="imageItem">
                 <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
                     <p style="font-weight: 500;">Tagine</p>
-                    <p style="font-size: 14px;">120 DH</p>
+                    <p>120 DH</p>
                 </div>
-                <div style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
-                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.5);" alt="More">
+                <div
+                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
+                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
                 </div>
             </div>
 
@@ -105,10 +113,38 @@
                 <img src="./salade.jpg" alt="Salade" id="imageItem">
                 <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
                     <p style="font-weight: 500;">Salade</p>
-                    <p style="font-size: 14px;">60 DH</p>
+                    <p>60 DH</p>
                 </div>
-                <div style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
-                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.5);" alt="More">
+                <div
+                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
+                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
+                </div>
+            </div>
+        </section>
+
+        <h3>Burger</h3>
+        <section>
+            <div id="item">
+                <img src="./burger.jpg" alt="Moroccan" id="imageItem">
+                <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
+                    <p style="font-weight: 500;">Cheese Burger</p>
+                    <p>120 DH</p>
+                </div>
+                <div
+                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
+                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
+                </div>
+            </div>
+
+            <div id="item">
+                <img src="./burger2.jpg" alt="Salade" id="imageItem">
+                <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
+                    <p style="font-weight: 500;">BBQ Burger</p>
+                    <p>60 DH</p>
+                </div>
+                <div
+                    style="display: flex; justify-content: flex-end; align-items: center; margin-right: 10px; flex: 1;">
+                    <img src="./arrow.svg" style="width: 28px; filter: brightness(0.6);" alt="More">
                 </div>
             </div>
         </section>

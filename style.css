@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 2000px;
+    height: 1000px;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
     background-size: cover;
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0px 0px 20px 0px rgb(91, 91, 91);
-
+    z-index: 20;
 }
 
 header div {
